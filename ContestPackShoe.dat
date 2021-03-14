@@ -1,0 +1,419 @@
+
+"Zook Blank" = {
+	"agents" = {
+		1 = { 
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = { 
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = { 
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_WORKSHOP"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_WORKSHOP.PNG"
+}
+"Zook Blank 2" = {
+	"agents" = {
+		1 = { 
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = { 
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = { 
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_BLANK_2"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_BLANK_2.PNG"
+}
+"Zook Blank 3" = {
+	"agents" = {
+		1 = { 
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = { 
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = { 
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_BLANK_3"
+			"contestants" = {
+			1 = 2
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_BLANK_3.PNG"
+}
+"Ready Steady Zook Red" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_READY_STEADY_ZOOK_RED"
+			"contestants" = {
+			1 = 2
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"score" = "red"
+	"picture" = "CP_READY_STEADY_ZOOK_RED.PNG"
+}
+"Ready Steady Zook Green" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_READY_STEADY_ZOOK_GREEN"
+			"contestants" = {
+			1 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"score" = "green"
+	"picture" = "CP_READY_STEADY_ZOOK_GREEN.PNG"
+}
+"Zook 'em off at the pass" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_PASS"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_PASS.PNG"
+}
+"Zook Action" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_ACTION"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_ACTION.PNG"
+}
+"Jack of Zooks" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_JACK_OF_ZOOKS"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_JACK_OF_ZOOKS.PNG"
+}
+"Zook Hotwheels" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_HOTWHEELS"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_HOTWHEELS.PNG"
+}
+"Zook Paddle" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_PADDLE"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_PADDLE.PNG"
+}
+"Zook Punchbag" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_PUNCHBAG"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_PUNCHBAG.png"
+}
+"Zook ZigZag" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_ZIGZAG"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_ZIGZAG.PNG"
+}
+"Zook of the Hill" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_ZOOK_OF_THE_HILL"
+			"contestants" = {
+			1 = 2
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_ZOOK_OF_THE_HILL.PNG"
+}
+"Spyrokart" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "CP_SPYROKART"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "CP_SPYROKART.PNG"
+}
