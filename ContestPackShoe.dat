@@ -88,6 +88,36 @@
 	}
 	"picture" = "CP_ZOOK_BLANK_3.PNG"
 }
+"Zook Cubes" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "CP_ZOOK_CUBES"
+            "contestants" = {
+            1 = 1
+            2 = 2
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "CP_ZOOK_CUBES.PNG"
+}
 "Ready Steady Zook Red" = {
 	"agents" = {
 		1 = {
