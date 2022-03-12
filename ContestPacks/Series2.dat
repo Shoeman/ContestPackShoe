@@ -1,0 +1,60 @@
+"Ready Steady Zook Red" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S2/CP_READY_STEADY_ZOOK_RED"
+			"contestants" = {
+			1 = 2
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"score" = "red"
+	"picture" = "S2/CP_READY_STEADY_ZOOK_RED.PNG"
+}
+"Ready Steady Zook Green" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S2/CP_READY_STEADY_ZOOK_GREEN"
+			"contestants" = {
+			1 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"score" = "green"
+	"picture" = "S2/CP_READY_STEADY_ZOOK_GREEN.PNG"
+}
