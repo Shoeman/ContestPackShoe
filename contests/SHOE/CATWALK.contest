@@ -1,0 +1,278 @@
+"behaviours" = 
+{
+	1 = 
+	{
+		"description" = ""
+		"id" = 1
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" = 
+			{
+				1 = 6
+				2 = 3
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	2 = 
+	{
+		"description" = "End of walk Red contact"
+		"id" = 2
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 6
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 2
+			}
+		}
+	}
+	3 = 
+	{
+		"description" = "Freeze Red"
+		"id" = 3
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 2
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Freeze"
+		"params" = 
+		{
+			"speed" = 5
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = "red delay"
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 2
+			}
+		}
+		"owner" = 1
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Timer"
+		"params" = 
+		{
+			"time" = 5
+			"repeat_times" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	5 = 
+	{
+		"description" = "UnFreeze Red"
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "UnFreeze"
+		"params" = 
+		{
+			"speed" = 5
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	1 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = ""
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"y" = 25
+			"x" = 157
+			"hole_x" = 0
+			"z" = 63
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-66, 0, 0)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+		}
+		"type" = "sphere"
+	}
+	5 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2"
+			"eulers" = (0, 270, 0)
+			"position" = (-66.2, 0.125011, 0)
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	6 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+		}
+		"type" = "sphere"
+	}
+	7 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"scale" = (20, 0, 1)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.1
+			"position" = (0, -0.4, 0)
+			"shadow" = false
+			"red" = 0.7
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = false
+			"blue" = 0.1
+			"shape" = "cylinder"
+			"density" = 1
+			"movable" = false
+		}
+		"type" = "cylinder"
+	}
+	8 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"scale" = (78.5, 1, 20)
+			"group" = "0"
+			"eulers" = (0, 0, 0)
+			"green" = 0.1
+			"position" = (-39.25, -0.9, -0)
+			"shadow" = false
+			"red" = 0.7
+			"rotation" = <0, 0, 0, 1>
+			"description" = "carpet"
+			"visible" = 1
+			"solid" = false
+			"blue" = 0.1
+			"shape" = "cube"
+			"density" = 1
+			"movable" = false
+		}
+		"type" = "cube"
+	}
+}
+"version" = 1
