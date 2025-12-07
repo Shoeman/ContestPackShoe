@@ -1,0 +1,451 @@
+"behaviours" = 
+{
+	2 = 
+	{
+		"description" = ""
+		"id" = 2
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 8
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 4
+			}
+			"loop" = 0
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	3 = 
+	{
+		"description" = ""
+		"id" = 3
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 8
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 5
+			}
+			"loop" = 0
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = ""
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 8
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "NoContact"
+		"params" = 
+		{
+			"timeout" = "0"
+			"target" = 2
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	5 = 
+	{
+		"description" = ""
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "NoContact"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 8
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 5
+			}
+			3 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 7
+			}
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	6 = 
+	{
+		"description" = ""
+		"id" = 6
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 8
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "NoContact"
+		"params" = 
+		{
+			"timeout" = "0"
+			"target" = 3
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	7 = 
+	{
+		"description" = ""
+		"id" = 7
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "NoContact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 8
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 7
+			}
+			3 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 5
+			}
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	8 = 
+	{
+		"description" = "Delay"
+		"id" = 8
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 1
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Timer"
+		"params" = 
+		{
+			"time" = 4
+			"repeat_times" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	9 = 
+	{
+		"description" = "red wait"
+		"id" = 9
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Freeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	10 = 
+	{
+		"description" = "red go"
+		"id" = 10
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 8
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Unfreeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	11 = 
+	{
+		"description" = "green wait"
+		"id" = 11
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Freeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	12 = 
+	{
+		"description" = "green go"
+		"id" = 12
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 8
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Unfreeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	8 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Contact Sensor"
+			"scale" = (40, 1, 15)
+			"position" = (0, 10, 0)
+			"visible" = false
+			"group" = "0"
+			"texture" = "plaster"
+			"eulers" = (90, 0, 0)
+			"shadow" = false
+			"shape" = "cylinder"
+			"solid" = false
+			"movable" = false
+			"red" = 0.5
+			"green" = 0.5
+			"blue" = 0.5
+		}
+		"type" = "cylinder"
+	}
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"eulers" = (0, 90, 0)
+			"position" = (5.625, 10, 0)
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2"
+			"eulers" = (0, -90, 0)
+			"position" = (-5.625, 10, 0)
+			"rotation" = <0, -0.707107, 0, 0.707107>
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	4 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"scale" = (1.73205, 0, 0)
+			"eulers" = (0, 0, 0)
+			"green" = 0.14902
+			"position" = (0, 0.5, 0)
+			"shadow" = false
+			"red" = 0.968627
+			"shape" = "sphere"
+			"rotation" = <0, 0, 0, 1>
+			"blue" = 0.105882
+			"visible" = false
+			"solid" = false
+			"movable" = false
+		}
+		"type" = "sphere"
+	}
+	5 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (0, 0.5, 0)
+			"visible" = false
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"scale" = (1.73205, 0, 0)
+			"eulers" = (0, 0, 0)
+			"green" = 0.14902
+			"solid" = false
+			"red" = 0.968627
+			"shape" = "sphere"
+			"density" = 1
+			"shadow" = false
+			"movable" = false
+			"movephase" = 0
+			"blue" = 0.105882
+			"movetime" = 1
+		}
+		"type" = "sphere"
+	}
+	6 = 
+	{
+		"agent" = "Turntable"
+		"params" = 
+		{
+			"scale" = (10, 10, 1)
+			"texture" = ""
+			"depth" = 4
+			"position" = (0, 1, 0)
+			"shadow" = 1
+			"radius" = 20
+			"movable" = 1
+			"curvature" = 10000
+			"visible" = 1
+			"red" = 0.619608
+			"green" = 0.615686
+			"blue" = 0.615686
+			"flags" = "8192"
+		}
+		"type" = ""
+	}
+	7 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = "The table"
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"x" = 112.5
+			"y" = 25
+			"z" = 45
+			"hole_x" = 0
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+}
+"version" = 1

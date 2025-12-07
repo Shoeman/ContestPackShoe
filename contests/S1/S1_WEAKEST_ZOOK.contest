@@ -1,0 +1,323 @@
+"behaviours" = 
+{
+	2 = 
+	{
+		"description" = ""
+		"id" = 2
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 5
+			}
+			"loop" = 0
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	3 = 
+	{
+		"description" = ""
+		"id" = 3
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 4
+			}
+			"loop" = 0
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = "red"
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 9
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 2
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	5 = 
+	{
+		"description" = "green"
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 9
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	6 = 
+	{
+		"description" = "red"
+		"id" = 6
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 9
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 6
+			}
+			3 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 7
+			}
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	7 = 
+	{
+		"description" = "green"
+		"id" = 7
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+		"owner" = 9
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 6
+			}
+			3 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 7
+			}
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	8 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = "The table"
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"x" = 112.5
+			"y" = 25
+			"z" = 45
+			"hole_x" = 7
+			"hole_z" = 10
+		}
+		"type" = ""
+	}
+	9 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0.276795, -3, -0.0584379)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"shadow" = false
+			"red" = 0.5
+			"scale" = (8.78611, 1, 10.8351)
+			"shape" = "cube"
+			"description" = ""
+			"movable" = false
+			"blue" = 0.5
+			"eulers" = (0, 0, 0)
+			"movephase" = 0
+			"solid" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2"
+			"eulers" = (0, -90, 0)
+			"position" = (19.125, 2, 0)
+			"rotation" = <0, -0.707107, 0, 0.707107>
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"eulers" = (0, 90, 0)
+			"position" = (-19.125, 2, 0)
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"description" = "Green"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	4 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (-45, 0.5, 0)
+			"visible" = false
+			"rotation" = <0, 0, 0, 1>
+			"scale" = (1.73205, 0, 0)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745
+			"shadow" = false
+			"red" = 0.0156863
+			"shape" = "sphere"
+			"movable" = false
+			"solid" = false
+			"blue" = 0.878431
+		}
+		"type" = "sphere"
+	}
+	5 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (45, 0.5, 0)
+			"visible" = false
+			"rotation" = <0, 0, 0, 1>
+			"scale" = (1.73205, 0, 0)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.14902
+			"shadow" = false
+			"red" = 0.968627
+			"shape" = "sphere"
+			"movable" = false
+			"solid" = false
+			"blue" = 0.105882
+		}
+		"type" = "sphere"
+	}
+	6 = 
+	{
+		"agent" = "PushyThing"
+		"params" = 
+		{
+			"scale" = (11, 5, 45)
+			"eulers" = (0, 0, 0)
+			"green" = 0.619608
+			"position" = (0, 0, 0)
+			"visible" = 1
+			"red" = 0.619608
+			"rotation" = <0, 0, 0, 1>
+			"shadow" = 1
+			"blue" = 0.619608
+		}
+		"type" = ""
+	}
+}
+"version" = 1

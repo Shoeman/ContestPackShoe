@@ -1,0 +1,575 @@
+"Series 1 - Ram Zook" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_RAM_ZOOK"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_RAM_ZOOK.PNG"
+}
+"Series 1 - Zook Pursuit" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_ZOOK_PURSUIT"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_ZOOK_PURSUIT.PNG"
+}
+"Series 1 - Zook Sumo" = {
+	"agents" = {
+		1 = { 
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = { 
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = { 
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S1/S1_ZOOK_SUMO"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "S1/S1_ZOOK_SUMO.png"
+}
+"Series 1 - Zook in a China Shop Red" = {
+"agents" = {
+	1 = { 
+	"team" = "Blue"
+	"name" = "Blue team player"
+	"selectable" = false
+	}
+	2 = { 
+	"team" = "Red"
+	"name" = "Red team player"
+	"selectable" = 1
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "S1/S1_ZOOK_IN_A_CHINA_SHOP_RED"
+		"contestants" = {
+		1 = 2
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "S1/S1_ZOOK_IN_A_CHINA_SHOP_RED.png"
+"score" = "red"
+}
+"Series 1 - Zook in a China Shop Green" = {
+"agents" = {
+	1 = { 
+	"team" = "Blue"
+	"name" = "Blue team player"
+	"selectable" = 1
+	}
+	2 = { 
+	"team" = "Red"
+	"name" = "Red team player"
+	"selectable" = false
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "S1/S1_ZOOK_IN_A_CHINA_SHOP_GREEN"
+		"contestants" = {
+		1 = 1
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "S1/S1_ZOOK_IN_A_CHINA_SHOP_GREEN.png"
+"score" = "green"
+}
+"Series 1 - Zook Trap" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_ZOOK_TRAP"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_ZOOK_TRAP.PNG"
+}
+"Series 1 - Zook Bowling Red" = {
+"agents" = {
+	1 = { 
+	"team" = "Blue"
+	"name" = "Blue team player"
+	"selectable" = false
+	}
+	2 = { 
+	"team" = "Red"
+	"name" = "Red team player"
+	"selectable" = 1
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "S1/S1_ZOOK_BOWLING_RED"
+		"contestants" = {
+		1 = 2
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "S1/S1_ZOOK_BOWLING_RED.png"
+"score" = "red"
+}
+"Series 1 - Zook Bowling Green" = {
+"agents" = {
+	1 = { 
+	"team" = "Blue"
+	"name" = "Blue team player"
+	"selectable" = 1
+	}
+	2 = { 
+	"team" = "Red"
+	"name" = "Red team player"
+	"selectable" = false
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "S1/S1_ZOOK_BOWLING_GREEN"
+		"contestants" = {
+		1 = 1
+		}
+	}
+}
+
+"camera" = {
+	"start" = (-20, 0, 0)
+	"finish" = (20, 0, 0)
+}
+"picture" = "S1/S1_ZOOK_BOWLING_GREEN.png"
+"score" = "green"
+}
+"Series 1 - Zook Hurdles" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_ZOOK_HURDLES"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_ZOOK_HURDLES.PNG"
+}
+"Series 1 - World's Strongest Zook" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_WORLDS_STRONGEST_ZOOK"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_WORLDS_STRONGEST_ZOOK.PNG"
+}
+"Series 1 - Zook Zig Zag" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_ZOOK_ZIG_ZAG"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_ZOOK_ZIG_ZAG.PNG"
+}
+"Series 1 - Merry go Zook" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_MERRY_GO_ZOOK"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_MERRY_GO_ZOOK.PNG"
+}
+"Series 1 - Zook Ball Red Striker" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_ZOOK_BALL_RED_STRIKER"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_ZOOK_BALL_RED_STRIKER.PNG"
+}
+"Series 1 - Zook Ball Green Striker" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_ZOOK_BALL_GREEN_STRIKER"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_ZOOK_BALL_GREEN_STRIKER.PNG"
+}
+"Series 1 - Weakest Zook" = {
+	"agents" = {
+		1 = { 
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = { 
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = { 
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S1/S1_WEAKEST_ZOOK"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (0, 0, 0)
+		"finish" = (0, 0, 0)
+	}
+	"picture" = "S1/S1_WEAKEST_ZOOK.png"
+}
+"Series 1 - Zook Tag" = {
+"agents" = {
+	1 = { 
+	"team" = "Blue"
+	"name" = "Blue team player"
+	"selectable" = 1
+	}
+	2 = { 
+	"team" = "Red"
+	"name" = "Red team player"
+	"selectable" = 1
+	}
+}
+
+"rounds" = { 
+	1 = {
+		"name" = "Round 1"
+		"contest" = "S1/S1_ZOOK_TAG"
+		"contestants" = {
+		1 = 1
+		2 = 2
+		}
+	}
+}
+"camera" = {
+	"start" = (-60, 0, 0)
+	"finish" = (60, 0, 0)
+}
+"picture" = "S1/S1_ZOOK_TAG.png"
+"score" = "both"
+}
+"Series 1 - Final Relay" = {
+	"agents" = {
+		1 = { 
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = { 
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = { 
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S1/S1_FINAL_RELAY"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (0, 0, 0)
+		"finish" = (0, 0, 0)
+	}
+	"picture" = "S1/S1_FINAL_RELAY.png"
+}
+"Series 1 - Lumber Zook" = {
+	"agents" = {
+		1 = { 
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = { 
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = { 
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S1/S1_LUMBER_ZOOK"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (0, 0, 0)
+		"finish" = (0, 0, 0)
+	}
+	"picture" = "S1/S1_LUMBER_ZOOK.png"
+}
+"Series 1 - Final" = {
+    "agents" = {
+        1 = {
+        "team" = "Blue"
+        "name" = "Blue team player"
+        "selectable" = 1
+        }
+        2 = {
+        "team" = "Red"
+        "name" = "Red team player"
+        "selectable" = 1
+        }
+    }
+
+    "rounds" = {
+        1 = {
+            "name" = "Round 1"
+            "contest" = "S1/S1_GRAND_FINAL"
+            "contestants" = {
+            1 = 2
+            2 = 1
+            }
+        }
+    }
+    "camera" = {
+        "start" = (-60, 0, 0)
+        "finish" = (60, 0, 0)
+    }
+    "picture" = "S1/S1_GRAND_FINAL.PNG"
+}

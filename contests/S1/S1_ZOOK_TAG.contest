@@ -1,0 +1,254 @@
+"behaviours" = 
+{
+	2 = 
+	{
+		"description" = ""
+		"id" = 2
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 4
+			}
+			"loop" = 1000
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	3 = 
+	{
+		"description" = ""
+		"id" = 3
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 4
+			}
+			"loop" = 1000
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = ""
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "RandomMove"
+		"params" = 
+		{
+			"startRandom" = false
+			"distanceX" = 45
+			"distanceY" = 0
+			"target" = 5
+			"targets" = 
+			{
+				1 = 2
+				2 = 3
+			}
+			"time" = -1
+			"distanceZ" = 18
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 6
+			}
+		}
+	}
+	5 = 
+	{
+		"description" = ""
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			3 = 
+			{
+				"id" = "EndScore"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	6 = 
+	{
+		"description" = ""
+		"id" = 6
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Timer"
+		"params" = 
+		{
+			"repeat_times" = 1
+			"time" = 45
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"eulers" = (0, 90, 0)
+			"position" = (15, 2, 0)
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"group" = "2"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"eulers" = (0, -90, 0)
+			"position" = (-15, 2, 0)
+			"rotation" = <0, -0.707107, 0, 0.707107>
+			"description" = "Blue"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"group" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	4 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (0, 0, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"scale" = (2, 0, 0)
+			"eulers" = (0, 0, 0)
+			"green" = 0.117188
+			"shadow" = 1
+			"red" = 0.996094
+			"shape" = "sphere"
+			"density" = 1
+			"solid" = 1
+			"movable" = false
+			"movephase" = 0
+			"blue" = 0.996094
+			"movetime" = 1
+		}
+		"type" = "sphere"
+	}
+	5 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"scale" = (0.5, 0, 0)
+			"eulers" = (0, 90, 0)
+			"green" = 0.5
+			"position" = (0, 0, 0)
+			"shadow" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"blue" = 0.5
+			"visible" = false
+			"solid" = false
+			"description" = ""
+			"movable" = false
+		}
+		"type" = "sphere"
+	}
+	6 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = "The table"
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"x" = 112.5
+			"y" = 25
+			"z" = 45
+			"hole_x" = 0
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+}
+"version" = 1

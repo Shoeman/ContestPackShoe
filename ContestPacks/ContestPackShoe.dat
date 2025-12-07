@@ -59,7 +59,7 @@
 	}
 	"picture" = "CP_ZOOK_PASS.PNG"
 }
-"Zook Action" = {
+"Shoe - Zook Action" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -89,7 +89,7 @@
 	}
 	"picture" = "SHOE/CP_ZOOK_ACTION.PNG"
 }
-"Jack of Zooks" = {
+"Shoe - Jack of Zooks" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -119,7 +119,7 @@
 	}
 	"picture" = "SHOE/CP_JACK_OF_ZOOKS.PNG"
 }
-"Zook Hotwheels" = {
+"Shoe - Zook Hotwheels" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -149,7 +149,7 @@
 	}
 	"picture" = "SHOE/CP_ZOOK_HOTWHEELS.PNG"
 }
-"Zook Paddle" = {
+"Shoe - Zook Paddle" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -179,7 +179,7 @@
 	}
 	"picture" = "SHOE/CP_ZOOK_PADDLE.PNG"
 }
-"Zook Punchbag" = {
+"Shoe - Zook Punchbag" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -239,7 +239,7 @@
 	}
 	"picture" = "SHOE/CP_ZOOK_ZIGZAG.PNG"
 }
-"Zook of the Hill" = {
+"Shoe - Zook of the Hill" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -268,7 +268,7 @@
 	}
 	"picture" = "SHOE/CP_ZOOK_OF_THE_HILL.PNG"
 }
-"Spyrokart" = {
+"Shoe - Spyrokart" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -298,7 +298,7 @@
 	}
 	"picture" = "SHOE/CP_SPYROKART.PNG"
 }
-"Zook Catwalk" = {
+"Shoe - Zook Catwalk" = {
 "agents" = {
 		1 = { 
 		"team" = "Blue"
@@ -327,7 +327,7 @@
 	}
 	"picture" = "SHOE/CATWALK.PNG"
 }
-"Zookmania S Curve" = {
+"Shoe - Zookmania S Curve" = {
 	"agents" = {
 		1 = {
 		"team" = "Blue"
@@ -356,4 +356,63 @@
 		"finish" = (60, 0, 0)
 	}
 	"picture" = "SHOE/ZOOKMANIA.PNG"
+}
+"Shoe - Swampletics" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "SHOE/SWAMPLETICS"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "SHOE/SWAMPLETICS.PNG"
+}
+"Shoe - Way of the Zook" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 0
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "SHOE/CP_WAY_OF_THE_ZOOK"
+			"contestants" = {
+			1 = 2
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "SHOE/CP_WAY_OF_THE_ZOOK.PNG"
 }

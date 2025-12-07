@@ -1,0 +1,657 @@
+"behaviours" = 
+{
+	1 = 
+	{
+		"description" = ""
+		"id" = 1
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" = 
+			{
+				1 = 7
+				2 = 9
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	2 = 
+	{
+		"description" = ""
+		"id" = 2
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" = 
+			{
+				1 = 7
+				2 = 8
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	3 = 
+	{
+		"description" = "House zook to red"
+		"id" = 3
+		"triggerOnEvents" = 
+		{
+			3 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 11
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Goto"
+		"params" = 
+		{
+			"target" = 4
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+	}
+	4 = 
+	{
+		"description" = "House zook to green"
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+		"owner" = 11
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Goto"
+		"params" = 
+		{
+			"target" = 5
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+	}
+	5 = 
+	{
+		"description" = "House zook to Red contact"
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+			3 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 11
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 4
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+	}
+	6 = 
+	{
+		"description" = "House zook to Green contact"
+		"id" = 6
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+			3 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+		"owner" = 11
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 5
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+	}
+	7 = 
+	{
+		"description" = "Freeze Red"
+		"id" = 7
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Freeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+	}
+	8 = 
+	{
+		"description" = "Freeze Green"
+		"id" = 8
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Freeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+	}
+	9 = 
+	{
+		"description" = "red delay"
+		"id" = 9
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+		"owner" = 1
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Timer"
+		"params" = 
+		{
+			"time" = 2
+			"repeat_times" = 1
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+	}
+	10 = 
+	{
+		"description" = "green delay"
+		"id" = 10
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 1
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Timer"
+		"params" = 
+		{
+			"time" = 2
+			"repeat_times" = 1
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+	}
+	11 = 
+	{
+		"description" = "UnFreeze Red"
+		"id" = 11
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 9
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "UnFreeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+	}
+	12 = 
+	{
+		"description" = "UnFreeze Green"
+		"id" = 12
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 10
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "UnFreeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+		}
+	}
+	13 = 
+	{
+		"description" = "House zook random start"
+		"id" = 13
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 11
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 5
+			}
+			3 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = 1
+			"loop" = 0
+			"targets" = 
+			{
+				1 = 4
+				2 = 5
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	1 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = "The table"
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"x" = 112.5
+			"y" = 25
+			"z" = 45
+			"hole_x" = 0
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+	2 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Red starting pad"
+			"position" = (-49, -0.4, -13)
+			"scale" = (10, 1, 10)
+			"eulers" = (0, 180, 0)
+			"group" = "0"
+			"shadow" = false
+			"rotation" = <0, 0, 0, 1>
+			"visible" = 1
+			"solid" = false
+			"texture" = "Agents/World/Target/plaster"
+			"red" = 0.968627451
+			"green" = 0.149019608
+			"blue" = 0.105882353
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Green starting pad"
+			"scale" = (10, 1, 10)
+			"position" = (-49, -0.4, 13)
+			"eulers" = (0, 180, 0)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"solid" = false
+			"shadow" = false
+			"visible" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"red" = 0.015686275
+			"green" = 0.862745098
+			"blue" = 0.968627451
+		}
+		"type" = ""
+	}
+	4 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2"
+			"eulers" = (0, 270, 0)
+			"position" = (-45, 0.125011, -13)
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	5 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"eulers" = (0, 270, 0)
+			"position" = (-45, 0.125011, 13)
+			"description" = "Green"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	6 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Visible finish line"
+			"position" = (48, -0.4, 0)
+			"scale" = (2, 1, 40)
+			"eulers" = (0, 180, 0)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = false
+			"solid" = false
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	7 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "target finish line"
+			"shape" = "cube"
+			"position" = (52, 0, 0)
+			"scale" = (10, 0.18041, 45)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = false
+			"movable" = false
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+			"red" = 0.5
+			"blue" = 0.5
+			"green" = 0.5
+		}
+		"type" = "cube"
+	}
+	8 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Target"
+			"position" = (-49, 0, 13)
+			"visible" = false
+			"group" = "0"
+			"movetime" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"shadow" = false
+			"shape" = "cube"
+			"scale" = (5, 5, 5)
+			"movable" = false
+			"solid" = false
+			"movephase" = 0
+			"red" = 0.5
+			"green" = 1
+			"blue" = 0.5
+		}
+		"type" = "cube"
+	}
+	9 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-49, 0, -13)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"solid" = false
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+			"scale" = (5, 5, 5)
+			"red" = 1
+			"green" = 0.5
+			"blue" = 0.5
+		}
+		"type" = "cube"
+	}
+	10 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Fang starting pad"
+			"scale" = (10, 1, 10)
+			"position" = (-49, -0.4, 0)
+			"eulers" = (0, 180, 0)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"solid" = false
+			"shadow" = false
+			"visible" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	11 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"description" = "The house zook"
+			"position" = (-45, 0.1, 0)
+			"eulers" = (0, -90, 0)
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"hatpin" = (0, 0, 0)
+			"flags" = "0"
+			"movable" = 1
+			"contestant" = 
+			{
+				"fullname" = "C:/Program Files (x86)/BAMZOOKi/Teams/examples/Creatures/Spider/2.1.zook"
+			}
+		}
+		"type" = ""
+	}
+}
+"version" = 1

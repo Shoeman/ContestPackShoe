@@ -1,0 +1,981 @@
+"behaviours" = 
+{
+	1 = 
+	{
+		"description" = ""
+		"id" = 1
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" = 
+			{
+				1 = 9
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	2 = 
+	{
+		"description" = ""
+		"id" = 2
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" = 
+			{
+				1 = 8
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	3 = 
+	{
+		"description" = ""
+		"id" = 3
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 7
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 4
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = ""
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 7
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 5
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	5 = 
+	{
+		"description" = ""
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 3
+			}
+			3 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 7
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	1 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = "The table"
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"x" = 112.5
+			"y" = 25
+			"z" = 46
+			"hole_x" = 0
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+	2 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Red starting pad"
+			"position" = (-49, -0.4, -10)
+			"scale" = (10, 1, 10)
+			"eulers" = (0, 180, 0)
+			"group" = "0"
+			"shadow" = false
+			"rotation" = <0, 0, 0, 1>
+			"visible" = 1
+			"solid" = false
+			"texture" = "Agents/World/Target/plaster"
+			"red" = 0.968627451
+			"green" = 0.149019608
+			"blue" = 0.105882353
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Green starting pad"
+			"scale" = (10, 1, 10)
+			"position" = (-49, -0.4, 10)
+			"eulers" = (0, 180, 0)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"solid" = false
+			"shadow" = false
+			"visible" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"red" = 0.015686275
+			"green" = 0.862745098
+			"blue" = 0.968627451
+		}
+		"type" = ""
+	}
+	4 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2"
+			"eulers" = (0, 270, 0)
+			"position" = (-45, 0.125011, -10)
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	5 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"eulers" = (0, 270, 0)
+			"position" = (-45, 0.125011, 10)
+			"description" = "Green"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	6 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Visible finish line"
+			"position" = (45, -0.4, 0)
+			"scale" = (2, 1, 45)
+			"eulers" = (0, 180, 0)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = false
+			"solid" = false
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	7 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "magic finish line"
+			"shape" = "cube"
+			"position" = (49, 0, 0)
+			"scale" = (10, 0.18041, 45)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = false
+			"movable" = false
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+			"red" = 0.5
+			"blue" = 0.5
+			"green" = 0.5
+		}
+		"type" = "cube"
+	}
+	8 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Green Zook Target"
+			"position" = (46, 0, 0)
+			"visible" = false
+			"group" = "0"
+			"movetime" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"shadow" = false
+			"shape" = "sphere"
+			"scale" = (0.5, 0, 0)
+			"movable" = false
+			"solid" = false
+			"movephase" = 0
+			"red" = 0.5
+			"green" = 1
+			"blue" = 0.5
+		}
+		"type" = "sphere"
+	}
+	9 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Red Zook Target"
+			"group" = "0"
+			"position" = (46, 0, 0)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"solid" = false
+			"shape" = "sphere"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"scale" = (0.5, 0, 0)
+			"red" = 1
+			"green" = 0.5
+			"blue" = 0.5
+		}
+		"type" = "sphere"
+	}
+	10 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, -20)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	11 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, -15)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	12 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, -10)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	13 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, -5)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	14 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, 5)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	15 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, 10)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	16 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, 15)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	17 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-30, -0.2, 20)
+			"scale" = (7, 1.0, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	18 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, -20)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	19 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, -15)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	20 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, -10)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	21 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, -5)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	22 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, 5)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	23 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, 10)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	24 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, 15)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	25 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (-10, -0.2, 20)
+			"scale" = (7, 1.5, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	26 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, -20)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	27 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, -15)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	28 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, -10)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	29 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, -5)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	30 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, 5)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	31 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, 10)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	32 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, 15)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	33 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (10, -0.2, 20)
+			"scale" = (7, 2.0, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	34 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, -20)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	35 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, -15)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	36 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, -10)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	37 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, -5)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	38 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, 5)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 4)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	39 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, 10)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 8)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	40 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, 15)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 12)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+	41 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Hurdle block"
+			"position" = (30, -0.2, 20)
+			"scale" = (7, 2.5, 5)
+			"eulers" = (0, 180, 16)
+			"rotation" = <0, 0, 0, 1>
+			"group" = "0"
+			"visible" = 1
+			"shadow" = 1
+			"solid" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = ""
+	}
+}
+"version" = 1

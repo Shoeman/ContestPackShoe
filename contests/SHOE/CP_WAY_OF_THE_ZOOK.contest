@@ -1,0 +1,4272 @@
+"behaviours" =
+{
+	1 =
+	{
+		"description" = ""
+		"id" = 1
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "Follow"
+		"params" =
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" =
+			{
+				1 = 4
+				2 = 6
+				3 = 59
+				4 = 68
+				5 = 69
+				6 = 70
+				7 = 71
+				8 = 72
+				9 = 73
+				10 = 74
+				11 = 75
+				12 = 76
+				13 = 77
+				14 = 78
+				15 = 79
+				16 = 90
+				17 = 112
+				18 = 113
+				19 = 114
+				20 = 121
+				21 = 128
+			}
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	3 =
+	{
+		"description" = ""
+		"id" = 3
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 9
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "ListenContact"
+		"params" =
+		{
+			"target" = 5
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	5 =
+	{
+		"description" = ""
+		"id" = 5
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = "Contact"
+				"behaviour" = 3
+			}
+		}
+		"owner" = 9
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "Finish"
+		"params" =
+		{
+			"invert" = false
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	6 =
+	{
+		"description" = ""
+		"id" = 6
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 4
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "ListenContact"
+		"params" =
+		{
+			"target" = 5
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	7 =
+	{
+		"description" = ""
+		"id" = 7
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 22
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "StartMoving"
+		"params" =
+		{
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	8 =
+	{
+		"description" = ""
+		"id" = 8
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 31
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "StartMoving"
+		"params" =
+		{
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	9 =
+	{
+		"description" = ""
+		"id" = 9
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = "Contact"
+				"behaviour" = 6
+			}
+		}
+		"owner" = 40
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "StartMoving"
+		"params" =
+		{
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	10 =
+	{
+		"description" = ""
+		"id" = 10
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = "Contact"
+				"behaviour" = 3
+			}
+		}
+		"owner" = 128
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "ListenContact"
+		"params" =
+		{
+			"target" = 5
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	11 =
+	{
+		"description" = ""
+		"id" = 11
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = "Contact"
+				"behaviour" = 10
+			}
+		}
+		"owner" = 5
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "Freeze"
+		"params" =
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+}
+"agents" =
+{
+	1 =
+	{
+		"agent" = "PoloTable"
+		"params" =
+		{
+			"description" = ""
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"y" = 25
+			"x" = 157
+			"hole_x" = 150
+			"z" = 63
+			"hole_z" = 60
+			"blue" = 0.5
+			"green" = 0.5
+			"red" = 0.5
+			"texture" = "toast"
+		}
+		"type" = ""
+	}
+	2 =
+	{
+		"agent" = "FixedSplitCube"
+		"params" =
+		{
+			"scale" = (60, 5, 60)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 1
+			"position" = (-45, -2.5, 0)
+			"shadow" = false
+			"red" = 1
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 1
+			"texture" = "Agents/World/Target/plaster"
+		}
+		"type" = "start floor"
+	}
+	3 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-70, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.996094
+			"density" = 1
+			"texture" = "toast"
+			"eulers" = (90, 0, 0)
+			"green" = 0.917969
+			"shadow" = false
+			"red" = 0.984375
+			"shape" = "cylinder"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = false
+			"description" = ""
+			"movephase" = 0
+			"solid" = false
+			"scale" = (12, 12, 0.2)
+		}
+		"type" = "cylinder"
+	}
+	4 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (10, 10, 15)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 0.1
+			"position" = (-25, 0, 0)
+			"shadow" = false
+			"red" = 0.9
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = false
+			"solid" = false
+			"blue" = 0.1
+			"density" = 1
+			"texture" = "white"
+			"shape" = "cube"
+			"movable" = false
+			"description" = "ball switch"
+		}
+		"type" = "cube"
+	}
+	5 =
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" =
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2"
+			"eulers" = (0, 270, 0)
+			"position" = (-68, 0, 0)
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	6 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (8, 8, 10)
+			"position" = (107, 0, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = "follow 2"
+		}
+		"type" = "cylinder"
+	}
+	7 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (5, 5, 10)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.8
+			"position" = (-40, 8, 0)
+			"shadow" = 1
+			"red" = 0.8
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.8
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "Agents/World/Target/toast"
+		}
+		"type" = "capsule"
+	}
+	8 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (5, 5, 10)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.8
+			"position" = (-40, 8, 7)
+			"shadow" = 1
+			"red" = 0.8
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.8
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "Agents/World/Target/toast"
+		}
+		"type" = "capsule"
+	}
+	9 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (74.1944, 0, 0)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"description" = "The real finish line"
+			"shape" = "cube"
+			"scale" = (10.4253, 0.2, 63)
+			"movable" = false
+			"blue" = 0.5
+			"eulers" = (0, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	10 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 10, 30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "hold balls"
+			"shape" = "cube"
+			"scale" = (30, 3, 24)
+			"movable" = false
+			"eulers" = (-12, 0, 0)
+			"shadow" = false
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	11 =
+	{
+		"agent" = "FixedSplitCube"
+		"params" =
+		{
+			"scale" = (90, 5, 30)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 1
+			"position" = (30, -2.5, 0)
+			"shadow" = false
+			"red" = 1
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 1
+			"texture" = "Agents/World/Target/plaster"
+		}
+		"type" = "rock bridge"
+	}
+	12 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (5, 5, 10)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.8
+			"position" = (-40, 8, -7)
+			"shadow" = 1
+			"red" = 0.8
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.8
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "Agents/World/Target/toast"
+		}
+		"type" = "capsule"
+	}
+	13 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (5, 5, 10)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.8
+			"position" = (-55, 8, 0)
+			"shadow" = 1
+			"red" = 0.8
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.8
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "Agents/World/Target/toast"
+		}
+		"type" = "capsule"
+	}
+	14 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (5, 5, 10)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.8
+			"position" = (-55, 8, 7)
+			"shadow" = 1
+			"red" = 0.8
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.8
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "Agents/World/Target/toast"
+		}
+		"type" = "capsule"
+	}
+	15 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (5, 5, 10)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.8
+			"position" = (-55, 8, -7)
+			"shadow" = 1
+			"red" = 0.8
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.8
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "Agents/World/Target/toast"
+		}
+		"type" = "capsule"
+	}
+	16 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (4, 4, 14)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.7
+			"position" = (-47.5, 10, -3.5)
+			"shadow" = 1
+			"red" = 0.7
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.6
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "claystone"
+		}
+		"type" = "capsule"
+	}
+	17 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (4, 4, 14)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.7
+			"position" = (-47.5, 10, 3.5)
+			"shadow" = 1
+			"red" = 0.7
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.6
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "claystone"
+		}
+		"type" = "capsule"
+	}
+	18 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (4, 4, 14)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.7
+			"position" = (-47.5, 10, -10.5)
+			"shadow" = 1
+			"red" = 0.7
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.6
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "claystone"
+		}
+		"type" = "capsule"
+	}
+	19 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (4, 4, 14)
+			"group" = "0"
+			"eulers" = (90, 0, 0)
+			"green" = 0.7
+			"position" = (-47.5, 10, 10.5)
+			"shadow" = 1
+			"red" = 0.7
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = 1
+			"blue" = 0.6
+			"shape" = "capsule"
+			"density" = 1
+			"movable" = 1
+			"yconstrain" = 1
+			"xrotconstrain" = 1
+			"zrotconstrain" = 1
+			"texture" = "claystone"
+		}
+		"type" = "capsule"
+	}
+	20 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-16, 7, 30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls wall"
+			"shape" = "cube"
+			"scale" = (2, 12, 24.5)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	21 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (16, 7, 30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls wall"
+			"shape" = "cube"
+			"scale" = (2, 12, 24.5)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	22 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 7, 16)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls gate"
+			"shape" = "cube"
+			"scale" = (31, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+			"moveposition" = (0, -6, 0)
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.0
+			"movedelay" = 1
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	23 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 15, 19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.5
+			"texture" = "ground01"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	24 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (4, 15, 19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.5
+			"texture" = "ground01"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	25 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-4, 15, 19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.5
+			"texture" = "ground01"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	26 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (2, 18, 25)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.5
+			"texture" = "ground01"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	27 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-2, 18, 25)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.5
+			"texture" = "ground01"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	28 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (60, 10, 30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "hold balls"
+			"shape" = "cube"
+			"scale" = (30, 3, 24)
+			"movable" = false
+			"eulers" = (-12, 0, 0)
+			"shadow" = false
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	29 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (44, 7, 30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls wall"
+			"shape" = "cube"
+			"scale" = (2, 12, 24.5)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	30 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (76, 7, 30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls wall"
+			"shape" = "cube"
+			"scale" = (2, 12, 24.5)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	31 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (60, 7, 16)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls gate"
+			"shape" = "cube"
+			"scale" = (31, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+			"moveposition" = (0, -6, 0)
+			"movepath" = 1
+			"movetime" = 1.8
+			"moveaccel" = 1
+			"movephase" = 0.00
+			"movedelay" = 1
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	32 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (60, 15, 19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.7
+			"texture" = "rock"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	33 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (64, 15, 19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.7
+			"texture" = "rock"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	34 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (56, 15, 19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.7
+			"texture" = "rock"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	35 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (62, 18, 25)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.7
+			"texture" = "rock"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	36 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (58, 18, 25)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.7
+			"texture" = "rock"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	37 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (30, 10, -30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "hold balls"
+			"shape" = "cube"
+			"scale" = (30, 3, 24)
+			"movable" = false
+			"eulers" = (12, 0, 0)
+			"shadow" = false
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	38 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (14, 7, -30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls wall"
+			"shape" = "cube"
+			"scale" = (2, 12, 24.5)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	39 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (46, 7, -30)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls wall"
+			"shape" = "cube"
+			"scale" = (2, 12, 24.5)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	40 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (30, 7, -16)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "balls gate"
+			"shape" = "cube"
+			"scale" = (31, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+			"moveposition" = (0, -6, 0)
+			"movepath" = 1
+			"movetime" = 1.3
+			"moveaccel" = 1
+			"movephase" = 0.00
+			"movedelay" = 1
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	41 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (30, 15, -19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.6
+			"texture" = "bark"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	42 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (34, 15, -19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.6
+			"texture" = "bark"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	43 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (36, 15, -19)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.6
+			"texture" = "bark"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	44 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (32, 18, -25)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.6
+			"texture" = "bark"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	45 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (28, 18, -25)
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"density" = 0.6
+			"texture" = "bark"
+			"eulers" = (0, 270, 0)
+			"green" = 1
+			"solid" = 1
+			"red" = 1
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 1
+			"moveaccel" = 0.5
+			"shadow" = 1
+			"movephase" = 0
+			"description" = ""
+			"scale" = (3, 0, 0)
+			"description" = "falling rock"
+		}
+		"type" = "sphere"
+	}
+	46 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, -5, -33)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 1 wall"
+			"shape" = "cube"
+			"scale" = (157, 12, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	47 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, -5, 33)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 1 wall"
+			"shape" = "cube"
+			"scale" = (157, 12, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	48 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-80, -6, 0)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 1 wall"
+			"shape" = "cube"
+			"scale" = (2, 8, 63)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	49 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (80, -5, 23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 1 wall"
+			"shape" = "cube"
+			"scale" = (2, 8, 18)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	50 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (80, -5, -23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 1 wall"
+			"shape" = "cube"
+			"scale" = (2, 8, 18)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	51 =
+	{
+		"agent" = "PoloTable"
+		"params" =
+		{
+			"description" = "table 2"
+			"group" = "0"
+			"position" = (177, 0, 0)
+			"y" = 25
+			"x" = 157
+			"hole_x" = 150
+			"z" = 63
+			"hole_z" = 60
+			"blue" = 0.5
+			"green" = 0.5
+			"red" = 0.5
+			"texture" = "toast"
+		}
+		"type" = ""
+    }
+    52 =
+    {
+        "agent" = "FixedSplitCube"
+        "params" =
+        {
+            "scale" = (20, 5, 30)
+            "group" = "0"
+            "eulers" = (0, 180, 0)
+            "green" = 1
+            "position" = (88.5, -2.5, 0)
+            "shadow" = false
+            "red" = 1
+            "rotation" = <0, 0, 0, 1>
+            "description" = "connector bridge"
+            "visible" = 1
+            "solid" = 1
+            "blue" = 1
+            "texture" = "Agents/World/Target/plaster"
+        }
+        "type" = ""
+    }
+	53 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (106, -4.99, 0)
+			"scale" = (25, 5, 25)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "plaster"
+			"description" = "table 2 path start"
+		}
+		"type" = "cube"
+    }
+	54 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (245, -21.5, 0)
+			"scale" = (60, 5, 18)
+			"eulers" = (0, 90, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "bottom back path"
+		}
+		"type" = "cube"
+    }
+	55 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (119, -5, -21.5)
+			"scale" = (39, 5, 20)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	56 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (128, -7.2, 0)
+			"scale" = (20, 3, 25.6)
+			"eulers" = (20, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "wood slope"
+		}
+		"type" = "cube"
+    }
+	57 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (138, -13.5, 21.5)
+			"scale" = (40, 5, 19)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	58 =
+	{
+		"agent" = "RevolvingDoor"
+		"params" =
+		{
+			"description" = "RevolvingDoor"
+			"group" = "0"
+			"position" = (220, 0.1, 0)
+			"visible" = 1
+			"texture" = "Agents/World/Target/wood"
+			"solid" = 1
+			"scale" = (2.5, 10, 60)
+			"movable" = 1
+			"eulers" = (0, 22.5, 0)
+			"shadow" = 1
+			"mass" = 1
+			"red" = 1
+			"green" = 1
+			"blue" = 1
+		}
+		"type" = ""
+	}
+	59 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (8, 8, 10)
+			"position" = (110, 0, -20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = "follow"
+		}
+		"type" = "cylinder"
+	}
+	60 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (148, -15.4, 0.5)
+			"scale" = (20, 3, 25.6)
+			"eulers" = (-18.5, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "wood slope"
+		}
+		"type" = "cube"
+    }
+	61 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (163, -21.5, -21.5)
+			"scale" = (50, 5, 19)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	62 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (168, -3, 11)
+			"scale" = (40, 3, 20)
+			"eulers" = (0, 90, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	63 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (191.9820087557, -9.0286330427, 21.5)
+			"scale" = (31.2, 5, 19)
+			"eulers" = (0, 0, -15.7)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	64 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (193, -3, 1)
+			"scale" = (30, 3, 20)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	65 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (205.5, -3, -19.5)
+			"scale" = (31, 3, 21)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	66 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (247, -4.99, 0)
+			"scale" = (25, 5, 25)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "plaster"
+			"description" = "table 2 path end"
+		}
+		"type" = "cube"
+    }
+	67 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (212, -21.5, -21.5)
+			"scale" = (48, 5, 19)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	68 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (8, 8, 10)
+			"position" = (128, 0, -20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = "follow"
+		}
+		"type" = "cylinder"
+	}
+	69 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (8, 8, 10)
+			"position" = (129, -7, 20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	70 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (8, 8, 10)
+			"position" = (147, -7, 20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	71 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (8, 8, 10)
+			"position" = (148, -15, -20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	72 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (244, -15, -20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	73 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (244, -15, 21)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	74 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (170, 2, 21)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	75 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (9, 9, 10)
+			"position" = (170, 2, 2)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	76 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (198, 2, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	77 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (199, 2, -20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	78 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (243, 2, -20)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	79 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (244, 2, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	80 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (222.017991244253, -17.4713669572, 21.5)
+			"scale" = (31.2, 5, 19)
+			"eulers" = (0, 0, -15.7)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge slope"
+		}
+		"type" = "cube"
+    }
+	81 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (177, -2, 32)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall"
+			"shape" = "cube"
+			"scale" = (157, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	82 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (118.125, -2, -32)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall part 1"
+			"shape" = "cube"
+			"scale" = (39.25, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	83 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (98.5, -2, 24)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 18)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	84 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (98.5, -2, -24)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 18)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	85 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (255.5, -2, 23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 19)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	86 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (255.5, -2, -23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 19)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	87 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (236.5, -3, -19.5)
+			"scale" = (31, 3, 21)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"description" = "edge path"
+		}
+		"type" = "cube"
+    }
+	88 =
+	{
+		"agent" = "PoloTable"
+		"params" =
+		{
+			"description" = "table 3"
+			"group" = "0"
+			"position" = (354, 0, 0)
+			"y" = 25
+			"x" = 157
+			"hole_x" = 150
+			"z" = 63
+			"hole_z" = 60
+			"blue" = 0.5
+			"green" = 0.5
+			"red" = 0.5
+			"texture" = "toast"
+		}
+		"type" = ""
+    }
+	89 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (35, 5, 60)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 1
+			"position" = (296.5, -5, 0)
+			"shadow" = false
+			"red" = 1
+			"rotation" = <0, 0, 0, 1>
+			"description" = "table 3 floor"
+			"visible" = 1
+			"solid" = 1
+			"blue" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"shape" = "cube"
+			"movable" = false
+		}
+		"type" = "cube"
+	}
+	90 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (285, 2, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	91 =
+    {
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (272, -4.99, 0)
+			"scale" = (25, 5, 25)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "plaster"
+			"description" = "bridge 2"
+		}
+		"type" = "cube"
+    }
+	92 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (40, 5, 25)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 1
+			"position" = (369, -5, 0)
+			"shadow" = false
+			"red" = 1
+			"rotation" = <0, 0, 0, 1>
+			"description" = "table 3 floor"
+			"visible" = 1
+			"solid" = 1
+			"blue" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"shape" = "cube"
+			"movable" = false
+		}
+		"type" = "cube"
+	}
+	93 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (290, 0, -18)
+			"scale" = (8, 10, 30)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = false
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "shield push"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	94 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (290, 4, -18)
+			"scale" = (2, 2, 29.5)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield stick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	95 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (290, 0, -4)
+			"scale" = (8, 10, 2)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+96 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (298, 0, -18)
+			"scale" = (8, 10, 30)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = false
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "shield push"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	97 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (298, 4, -18)
+			"scale" = (2, 2, 29.5)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield stick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	98 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (298, 0, -4)
+			"scale" = (8, 10, 2)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+99 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (306, 0, -18)
+			"scale" = (8, 10, 30)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = false
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "shield push"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	100 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (306, 4, -18)
+			"scale" = (2, 2, 29.5)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield stick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	101 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (306, 0, -4)
+			"scale" = (8, 10, 2)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, -22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	102 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (306, 0, 18)
+			"scale" = (8, 10, 30)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = false
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "shield push"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	103 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (306, 4, 18)
+			"scale" = (2, 2, 29.5)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield stick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	104 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (306, 0, 4)
+			"scale" = (8, 10, 2)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+105 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (314, 0, 18)
+			"scale" = (8, 10, 30)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = false
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "shield push"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	106 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (314, 4, 18)
+			"scale" = (2, 2, 29.5)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield stick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	107 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (314, 0, 4)
+			"scale" = (8, 10, 2)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+108 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (322, 0, 18)
+			"scale" = (8, 10, 30)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = false
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "shield push"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	109 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (322, 4, 18)
+			"scale" = (2, 2, 29.5)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield stick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	110 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (322, 0, 4)
+			"scale" = (8, 10, 2)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"texture" = "wood"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	111 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (35, 5, 60)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 1
+			"position" = (331.5, -5, 0)
+			"shadow" = false
+			"red" = 1
+			"rotation" = <0, 0, 0, 1>
+			"description" = "table 3 floor"
+			"visible" = 1
+			"solid" = 1
+			"blue" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"shape" = "cube"
+			"movable" = false
+		}
+		"type" = "cube"
+	}
+	112 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (306, 0, -5)
+			"scale" = (2, 10, 15)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, 0, 22)
+			"group" = "0"
+			"visible" = false
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield gap"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "plaster"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = 1
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 0, 1)
+		}
+		"type" = "cube"
+	}
+	113 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (338, 2, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	114 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (385, 2, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	115 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (370, 0, 0)
+			"scale" = (3, 3, 26)
+			"eulers" = (10, -10, 45)
+			"moveposition" = (0, -5, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "cross thing"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "bark"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	116 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (370, 0, 0)
+			"scale" = (3, 3, 26)
+			"eulers" = (-10, 10, 45)
+			"moveposition" = (0, -5, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "cross thing"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "bark"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	117 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (395, 3, 20)
+			"scale" = (6, 4, 4)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, -8, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "log holder"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "claystone"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	118 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (395, 3, -20)
+			"scale" = (6, 4, 4)
+			"eulers" = (0, 0, 0)
+			"moveposition" = (0, -8, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "log holder"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "claystone"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	119 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (395, 7, 0)
+			"scale" = (5, 5, 40)
+			"eulers" = (0, 0, 90)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1.5
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "shield push"
+			"shape" = "cylinder"
+			"movable" = 1
+			"shadow" = false
+			"texture" = "wood"
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = false
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cylinder"
+	}
+	120 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (40, 5, 25)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 1
+			"position" = (409, -5, 0)
+			"shadow" = false
+			"red" = 1
+			"rotation" = <0, 0, 0, 1>
+			"description" = "table 3 floor"
+			"visible" = 1
+			"solid" = 1
+			"blue" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"shape" = "cube"
+			"movable" = false
+		}
+		"type" = "cube"
+	}
+	121 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (415, 2, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	122 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (425, -2, 0)
+			"scale" = (1, 6, 6)
+			"eulers" = (45, 0, 0)
+			"moveposition" = (0, -10, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "spike"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "stripe3"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	123 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (425, -2, 8.2)
+			"scale" = (1, 6, 6)
+			"eulers" = (45, 0, 0)
+			"moveposition" = (0, -10, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "spike"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "stripe3"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	124 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (425, -2, -8.2)
+			"scale" = (1, 6, 6)
+			"eulers" = (45, 0, 0)
+			"moveposition" = (0, -10, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "spike"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "stripe3"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0.5
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	125 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (425, -2, 4.1)
+			"scale" = (1, 6, 6)
+			"eulers" = (45, 0, 0)
+			"moveposition" = (0, -10, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "spike"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "stripe3"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	126 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (425, -2, -4.1)
+			"scale" = (1, 6, 6)
+			"eulers" = (45, 0, 0)
+			"moveposition" = (0, -10, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "spike"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "stripe3"
+			"movepath" = 1
+			"movetime" = 0.8
+			"moveaccel" = 1
+			"movephase" = 0
+			"movedelay" = false
+
+			"xconstrain" = 1
+			"yconstrain" = false
+			"zconstrain" = 1
+			"xrotconstrain" = 1
+			"yrotconstrain" = 1
+			"zrotconstrain" = 1
+			"prismatic" = (0, 1, 0)
+		}
+		"type" = "cube"
+	}
+	127 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (40, 5, 25)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 1
+			"position" = (449, -5, 0)
+			"shadow" = false
+			"red" = 1
+			"rotation" = <0, 0, 0, 1>
+			"description" = "table 3 floor"
+			"visible" = 1
+			"solid" = 1
+			"blue" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"shape" = "cube"
+			"movable" = false
+		}
+		"type" = "cube"
+	}
+	128 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (7, 7, 10)
+			"position" = (453, 2, 0)
+			"eulers" = (90, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+		}
+		"type" = "cylinder"
+	}
+	129 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (371, -5, -33)
+			"scale" = (123, 12, 2)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	130 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (379.5, -5, 33)
+			"scale" = (106, 12, 2)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	131 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (314, 0, 40)
+			"scale" = (25, 10, 15)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield brick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "plaster"
+
+		}
+		"type" = "cube"
+	}
+	132 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"position" = (298, 0, -40)
+			"scale" = (25, 10, 15)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "shield brick"
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"texture" = "plaster"
+
+		}
+		"type" = "cube"
+	}
+	133 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (289, -5, 33)
+			"scale" = (25, 12, 2)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	134 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (281, -5, -33)
+			"scale" = (9, 12, 2)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	135 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (274, -2, 23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 19)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	136 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (274, -2, -23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 19)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	137 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (433, -2, 23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 19)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	138 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (433, -2, -23.5)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 3 wall"
+			"shape" = "cube"
+			"scale" = (2, 6, 19)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	139 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (433, -2, 13)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "table 3 arch"
+			"shape" = "cube"
+			"scale" = (2, 23, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	140 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (433, -2, -13)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "table 3 arch"
+			"shape" = "cube"
+			"scale" = (2, 23, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	141 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (433, 21, 0)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "table 3 arch"
+			"shape" = "cube"
+			"scale" = (4, 1.5, 29)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	142 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"scale" = (22, 22, 0.5)
+			"position" = (433, -1.99, 0)
+			"eulers" = (0, 90, 0)
+			"group" = "0"
+			"visible" = 1
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 2, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"green" = 0.9
+			"solid" = false
+			"red" = 1
+			"shape" = "cylinder"
+			"movetime" = 1
+			"blue" = 0.1
+			"moveaccel" = 0.5
+			"shadow" = false
+		}
+		"type" = "cylinder"
+	}
+	143 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (433, 0, 0)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = false
+			"description" = "table 3 arch"
+			"shape" = "cube"
+			"scale" = (0.4, 22, 25)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "table"
+		}
+		"type" = "cube"
+	}
+	144 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (157.375, -2, -32)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall part 2"
+			"shape" = "cube"
+			"scale" = (39.25, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	145 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (196.625, -2, -32)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall part 2"
+			"shape" = "cube"
+			"scale" = (39.25, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+	146 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (235.875, -2, -32)
+			"visible" = 1
+			"density" = 1
+			"green" = 1
+			"red" = 1
+			"blue" = 1
+			"solid" = 1
+			"description" = "table 2 wall part 2"
+			"shape" = "cube"
+			"scale" = (39.25, 6, 2)
+			"movable" = false
+			"eulers" = (0, 0, 0)
+			"shadow" = 1
+			"texture" = "wood"
+		}
+		"type" = "cube"
+	}
+}
+"version" = 1

@@ -1,0 +1,3764 @@
+"behaviours" = 
+{
+	8 = 
+	{
+		"description" = ""
+		"id" = 8
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 5
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Freeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	9 = 
+	{
+		"description" = "end wait"
+		"id" = 9
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 5
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Timer"
+		"params" = 
+		{
+			"repeat_times" = 1
+			"time" = 5
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	10 = 
+	{
+		"description" = ""
+		"id" = 10
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 414
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "TotalNoContact"
+		"params" = 
+		{
+			"timeout" = "0.5"
+			"winner" = 2
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	3 = 
+	{
+		"description" = ""
+		"id" = 3
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "RandomMoveNoScore"
+		"params" = 
+		{
+			"startRandom" = 1
+			"distanceX" = 40
+			"distanceY" = 0
+			"distanceZ" = 17
+			"targets" = 
+			{
+				1 = 2
+			}
+			"time" = -1
+			"target" = 138
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = ""
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 3
+			}
+			"loop" = 0
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	5 = 
+	{
+		"description" = "25 sec main timer"
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Timer"
+		"params" = 
+		{
+			"repeat_times" = 1
+			"time" = 25
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	7 = 
+	{
+		"description" = ""
+		"id" = 7
+		"triggerOnEvents" = 
+		{
+			5 = 
+			{
+				"id" = "Timer"
+				"behaviour" = 9
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"rotation" = <0, -0.707107, 0, 0.707107>
+			"eulers" = (0, -90, 0)
+			"position" = (4, 2, 0)
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (0, 0, 0)
+			"visible" = false
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"scale" = (1.73205, 0, 0)
+			"eulers" = (0, 0, 0)
+			"green" = 0
+			"shadow" = false
+			"red" = 0.996094
+			"shape" = "sphere"
+			"density" = 1
+			"solid" = false
+			"movable" = false
+			"movephase" = 0
+			"blue" = 0.996094
+			"movetime" = 1
+		}
+		"type" = "sphere"
+	}
+	4 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	5 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	6 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	7 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"shadow" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	8 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	9 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	10 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	11 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	12 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	13 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	14 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	15 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	16 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	17 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	18 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	19 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	20 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	21 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	22 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	23 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	24 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	25 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	26 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	27 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	28 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	29 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	30 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	31 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	32 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	33 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	34 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (22.5, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	35 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (28.125, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"shadow" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	36 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (33.75, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"shadow" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	37 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (5.625, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	38 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	39 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	40 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (5.625, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	41 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	42 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	43 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (5.625, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	44 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	45 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	47 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	48 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	49 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	50 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	51 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	52 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	53 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	54 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	56 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	57 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	58 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (5.625, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	59 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	60 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	61 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (5.625, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	62 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	63 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	64 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (5.625, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	65 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (11.25, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	66 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (16.875, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	67 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	68 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-5.625, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	69 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	70 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	71 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-5.625, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	72 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	73 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	74 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-5.625, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	75 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	76 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	79 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	80 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	81 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	82 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	85 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	86 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-5.625, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	87 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	88 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	89 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-5.625, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	90 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	91 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-11.25, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	92 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-5.625, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	93 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	94 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	95 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	96 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	97 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	98 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	99 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	100 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	101 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	102 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	103 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	104 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	105 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	106 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	107 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	108 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	109 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	110 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	111 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	112 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	113 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	114 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	115 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	116 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	117 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	118 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	119 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	120 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	121 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	122 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	123 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	124 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-28.125, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	125 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-22.5, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	126 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-16.875, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	127 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, -20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	128 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, -13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	129 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, -9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	130 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, -4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	131 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, -2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	132 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, 0)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	133 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, 2.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	134 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, 4.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	135 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, 9)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	136 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, 13.5)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.968627451
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"shadow" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = 1
+			"movephase" = 0
+			"solid" = 1
+			"density" = 1
+		}
+		"type" = "cube"
+	}
+	137 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (-33.75, 0.025, 20.25)
+			"visible" = 1
+			"rotation" = <0, 0, 0, 1>
+			"moveposition" = (0, 0, 0)
+			"movable" = 1
+			"scale" = (0.5, 8, 0.5)
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 0, 0)
+			"green" = 0.862745098
+			"solid" = 1
+			"red" = 0.015686275
+			"shape" = "cube"
+			"movetime" = 1
+			"shadow" = 1
+			"density" = 1
+			"movephase" = 0
+			"blue" = 0.968627451
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	138 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (0, 0.025, 0)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"scale" = (0.5, 0, 0)
+			"eulers" = (0, 90, 0)
+			"green" = 0.5
+			"shadow" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"density" = 1
+			"description" = ""
+			"blue" = 0.5
+			"solid" = false
+			"movephase" = 0
+			"movetime" = 1
+			"moveaccel" = 0.5
+		}
+		"type" = "sphere"
+	}
+	139 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"x" = 112.5
+			"y" = 25
+			"z" = 45
+			"hole_x" = 0
+			"position" = (0, 0, 0)
+			"hole_z" = 0
+			"description" = ""
+		}
+		"type" = ""
+	}
+	414 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0, 6.3, 0)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"movetime" = 1
+			"shape" = "cube"
+			"shadow" = false
+			"moveaccel" = 0.5
+			"eulers" = (0, 0, 0)
+			"blue" = 0.5
+			"movephase" = 0
+			"description" = "intrusion sensor"
+			"scale" = (150, 1, 53.2506)
+		}
+		"type" = "cube"
+	}
+}
+"version" = 1

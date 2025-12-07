@@ -1,0 +1,851 @@
+"behaviours" = 
+{
+	16 = 
+	{
+		"description" = "Ball hits goal floor"
+		"id" = 16
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 9
+			}
+		}
+		"owner" = 14
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Winner"
+		"params" = 
+		{
+			"winner" = 3
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	17 = 
+	{
+		"description" = "If ball falls of edge striker loses"
+		"id" = 17
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 10
+			}
+			3 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 11
+			}
+			4 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 12
+			}
+			5 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 13
+			}
+			6 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 14
+			}
+			7 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 15
+			}
+		}
+		"owner" = 14
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Loser"
+		"params" = 
+		{
+			"loser" = 3
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	2 = 
+	{
+		"description" = "Striker Path"
+		"id" = 2
+		"triggerOnEvents" = 
+		{
+			1 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 8
+				2 = 6
+			}
+			"loop" = 0
+			"startRandom" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = "Kick ball wall contact"
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 9
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 4
+			}
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 4
+			}
+		}
+	}
+	18 = 
+	{
+		"description" = "Finish"
+		"id" = 18
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Winner"
+				"behaviour" = 16
+			}
+			3 = 
+			{
+				"id" = "Loser"
+				"behaviour" = 17
+			}
+		}
+		"owner" = 14
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Finish"
+				"behaviour" = 18
+			}
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = false
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	6 = 
+	{
+		"description" = "Goalie follow ball when coming"
+		"id" = 6
+		"triggerOnEvents" = 
+		{
+			4 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Goto"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	7 = 
+	{
+		"description" = "Goalie go left right"
+		"id" = 7
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"startRandom" = false
+			"loop" = 100
+			"targets" = 
+			{
+				1 = 11
+				2 = 7
+			}
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	8 = 
+	{
+		"description" = "Goalie start when ball coming"
+		"id" = 8
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Contact"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Unfreeze"
+		"params" = 
+		{
+			"speed" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	9 = 
+	{
+		"description" = "goal floor to ball contact"
+		"id" = 9
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 14
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	10 = 
+	{
+		"description" = "Ball off the edge"
+		"id" = 10
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 31
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	11 = 
+	{
+		"description" = "Ball off the edge"
+		"id" = 11
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 32
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	12 = 
+	{
+		"description" = "Ball off the edge"
+		"id" = 12
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 33
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	13 = 
+	{
+		"description" = "Ball off the edge"
+		"id" = 13
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 34
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	14 = 
+	{
+		"description" = "Ball off the edge"
+		"id" = 14
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 35
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	15 = 
+	{
+		"description" = "Ball off the back edge"
+		"id" = 15
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 36
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "ListenContact"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	32 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "table edge sensor"
+			"scale" = (78.4513, 4.68816, 1)
+			"position" = (-38.7212, 0, 23)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = false
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"red" = 0.5
+			"green" = 0.5
+			"blue" = 0.5
+		}
+		"type" = "cube"
+	}
+	33 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "table edge sensor"
+			"position" = (-56.75, 0, 0)
+			"scale" = (1, 5.09795, 45)
+			"eulers" = (0, 0, 0)
+			"group" = "0"
+			"visible" = false
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = false
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = false
+			"red" = 0.5
+			"green" = 0.5
+			"blue" = 0.5
+		}
+		"type" = "cube"
+	}
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"description" = "Goalie"
+			"scale" = (1, 1, 1)
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"eulers" = (0, 90, 0)
+			"position" = (25, 2, 0)
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+			
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"description" = "Striker"
+			"scale" = (1, 1, 1)
+			"rotation" = <0, -0.707107, 0, 0.707107>
+			"eulers" = (0, -90, 0)
+			"position" = (-15, 2, 0)
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	36 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "table back edge sensor"
+			"group" = "0"
+			"position" = (56.75, 0, 0)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cube"
+			"scale" = (1, 4.27836, 45)
+			"movable" = false
+			"blue" = 0.5
+			"eulers" = (0, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	6 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Post Strike Target"
+			"position" = (17, 0.5, 0)
+			"visible" = false
+			"scale" = (2.44949, 0, 0)
+			"eulers" = (0, 0, 0)
+			"solid" = false
+			"shape" = "sphere"
+			"shadow" = false
+			"movable" = false
+			"red" = 0.015686275
+			"green" = 0.862745098
+			"blue" = 0.968627451
+		}
+		"type" = "sphere"
+	}
+	7 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Goalie left"
+			"position" = (23, 0.5, 6)
+			"visible" = false
+			"scale" = (2, 0, 0)
+			"eulers" = (0, 0, 0)
+			"solid" = false
+			"shape" = "sphere"
+			"density" = 1
+			"shadow" = false
+			"movable" = false
+			"red" = 0.968627
+			"green" = 0.14902
+			"blue" = 0.105882
+		}
+		"type" = "sphere"
+	}
+	8 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"mass" = 4
+			"density" = 0.04
+			"description" = "The ball"
+			"position" = (0, 4.1, 0)
+			"scale" = (2, 0, 0)
+			"eulers" = (0, 90, 0)
+			"visible" = 1
+			"shadow" = 1
+			"shape" = "sphere"
+			"movable" = 1
+			"solid" = 1
+			"red" = 0.015686275
+			"green" = 0.862745098
+			"blue" = 0.968627451
+		}
+		"type" = "sphere"
+	}
+	9 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Ball kick sensor wall"
+			"position" = (4.15, 0.5, 0)
+			"scale" = (1, 3, 30)
+			"eulers" = (0, 0, 0)
+			"visible" = false
+			"movable" = false
+			"texture" = "Agents/World/Target/plaster"
+			"shadow" = false
+			"shape" = "cube"
+			"solid" = false
+			"red" = 0.619608
+			"green" = 0.615686
+			"blue" = 0.615686
+		}
+		"type" = "cube"
+	}
+	10 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Goal Wall"
+			"position" = (30, 0, 10.5)
+			"scale" = (10, 3, 1)
+			"eulers" = (0, 0, 0)
+			"visible" = 1
+			"texture" = ""
+			"solid" = 1
+			"shape" = "cube"
+			"movable" = false
+			"shadow" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = "cube"
+	}
+	11 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Goalie right"
+			"position" = (23, 0.5, -6)
+			"visible" = false
+			"scale" = (2, 0, 0)
+			"eulers" = (0, 0, 0)
+			"solid" = false
+			"shape" = "sphere"
+			"density" = 1
+			"shadow" = false
+			"movable" = false
+			"red" = 0.968627
+			"green" = 0.14902
+			"blue" = 0.105882
+		}
+		"type" = "sphere"
+	}
+	24 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "goal wall"
+			"position" = (30, 0, -10.5)
+			"scale" = (10, 3, 1)
+			"eulers" = (0, 0, 0)
+			"visible" = 1
+			"movable" = false
+			"texture" = ""
+			"solid" = 1
+			"shape" = "cube"
+			"shadow" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = "cube"
+	}
+	14 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Goal floor"
+			"position" = (30, 0, 0)
+			"scale" = (10, 0.05, 20)
+			"eulers" = (0, 0, 0)
+			"visible" = 1
+			"movable" = false
+			"texture" = ""
+			"shadow" = false
+			"shape" = "cube"
+			"solid" = false
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = "cube"
+	}
+	15 = 
+	{
+		"agent" = "PoloTable"
+		"params" = 
+		{
+			"description" = "The table"
+			"group" = "0"
+			"x" = 112.5
+			"y" = 25
+			"z" = 45
+			"position" = (0, 0, 0)
+			"hole_x" = 0
+			"hole_z" = 0
+		}
+		"type" = ""
+	}
+	16 = 
+	{
+		"agent" = "FixedSplitCube"
+		"params" = 
+		{
+			"description" = "Start Pad"
+			"texture" = "Agents/World/Target/plaster"
+			"scale" = (10, 1, 10)
+			"group" = "0"
+			"eulers" = (0, 0, 0)
+			"position" = (-20, -0.4, 0)
+			"shadow" = false
+			"rotation" = <0, 0, 0, 1>
+			"visible" = 1
+			"solid" = false
+			"red" = 0.015686275
+			"green" = 0.862745098
+			"blue" = 0.968627451
+		}
+		"type" = ""
+	}
+	35 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "table edge sensor"
+			"group" = "0"
+			"position" = (42.403, -1.52588e-005, -23)
+			"visible" = false
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cube"
+			"scale" = (71.8945, 5.09795, 1)
+			"movable" = false
+			"blue" = 0.5
+			"eulers" = (0, 0, 0)
+			"shadow" = false
+		}
+		"type" = "cube"
+	}
+	34 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "table edge sensor"
+			"group" = "0"
+			"position" = (-36.5349, -7.62939e-006, -23)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cube"
+			"scale" = (84.8376, 4.27836, 1.81959)
+			"movable" = false
+			"blue" = 0.5
+			"eulers" = (0, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	26 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "Back of the net"
+			"position" = (35.5, 0, 0)
+			"scale" = (1, 3, 20)
+			"eulers" = (0, 0, 0)
+			"visible" = 1
+			"movable" = false
+			"texture" = ""
+			"solid" = 1
+			"shape" = "cube"
+			"shadow" = 1
+			"red" = 0.619607843
+			"green" = 0.615686275
+			"blue" = 0.615686275
+		}
+		"type" = "cube"
+	}
+	31 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"description" = "table edge sensor"
+			"group" = "0"
+			"position" = (39.7391, -1.52588e-005, 23)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "cube"
+			"scale" = (77.6317, 5.09795, 1)
+			"movable" = false
+			"blue" = 0.5
+			"eulers" = (0, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+}
+"version" = 1

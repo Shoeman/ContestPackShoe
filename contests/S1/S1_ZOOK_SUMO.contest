@@ -1,0 +1,556 @@
+"behaviours" = 
+{
+	16 = 
+	{
+		"description" = "Resume once reached centre"
+		"id" = 16
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Finished"
+				"behaviour" = 15
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Resume"
+		"params" = 
+		{
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	17 = 
+	{
+		"description" = ""
+		"id" = 17
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 14
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "NoContact"
+				"behaviour" = 17
+			}
+		}
+		"name" = "NoContact"
+		"params" = 
+		{
+			"timeout" = "0"
+			"target" = 2
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	18 = 
+	{
+		"description" = "no contact red"
+		"id" = 18
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 14
+		"destroyOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "NoContact"
+				"behaviour" = 18
+			}
+		}
+		"name" = "NoContact"
+		"params" = 
+		{
+			"timeout" = "0"
+			"target" = 3
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	19 = 
+	{
+		"description" = ""
+		"id" = 19
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "NoContact"
+				"behaviour" = 17
+			}
+			3 = 
+			{
+				"id" = "NoContact"
+				"behaviour" = 18
+			}
+		}
+		"owner" = 14
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Finish"
+		"params" = 
+		{
+			"invert" = 1
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	4 = 
+	{
+		"description" = ""
+		"id" = 4
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 8
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "PositionBehind"
+		"params" = 
+		{
+			"target" = 2
+			"owner" = 3
+			"distance" = 7.23684
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	5 = 
+	{
+		"description" = ""
+		"id" = 5
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 6
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "PositionBehind"
+		"params" = 
+		{
+			"target" = 3
+			"owner" = 2
+			"distance" = 7.89473
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	6 = 
+	{
+		"description" = "Goto apponent"
+		"id" = 6
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Goto"
+		"params" = 
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	7 = 
+	{
+		"description" = "Goto opponent"
+		"id" = 7
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Goto"
+		"params" = 
+		{
+			"target" = 6
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	8 = 
+	{
+		"description" = "Monitor distance"
+		"id" = 8
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "MonitorDistance"
+		"params" = 
+		{
+			"target" = 4
+			"distance" = 21
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	9 = 
+	{
+		"description" = "Monotor distance"
+		"id" = 9
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "MonitorDistance"
+		"params" = 
+		{
+			"target" = 4
+			"distance" = 21
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	10 = 
+	{
+		"description" = "Suspend once to far"
+		"id" = 10
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Distance"
+				"behaviour" = 8
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Suspend"
+		"params" = 
+		{
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	11 = 
+	{
+		"description" = "Suspend once to far"
+		"id" = 11
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Distance"
+				"behaviour" = 9
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Suspend"
+		"params" = 
+		{
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	12 = 
+	{
+		"description" = "Follow centre after suspend"
+		"id" = 12
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -4
+				"behaviour" = 10
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 4
+			}
+			"loop" = 0
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	14 = 
+	{
+		"description" = "Resume once reached centre"
+		"id" = 14
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = "Finished"
+				"behaviour" = 12
+			}
+		}
+		"owner" = 3
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Resume"
+		"params" = 
+		{
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+	15 = 
+	{
+		"description" = "Follow centre after suspend"
+		"id" = 15
+		"triggerOnEvents" = 
+		{
+			2 = 
+			{
+				"id" = -4
+				"behaviour" = 11
+			}
+		}
+		"owner" = 2
+		"destroyOnEvents" = 
+		{
+		}
+		"name" = "Follow"
+		"params" = 
+		{
+			"targets" = 
+			{
+				1 = 4
+			}
+			"loop" = 0
+		}
+		"triggerOffEvents" = 
+		{
+		}
+	}
+}
+"agents" = 
+{
+	2 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"eulers" = (180, -90, 180)
+			"position" = (-4.2, 2, -0.052)
+			"rotation" = <0, 1, 0, -1.62921e-007>
+			"description" = "Green"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	3 = 
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" = 
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2 "
+			"eulers" = (0, 90, 0)
+			"position" = (4.2, 2, 0.05)
+			"rotation" = <0, 0, 0, 1>
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	4 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"scale" = (1, 0, 0)
+			"eulers" = (0, 0, 0)
+			"green" = 0.14902
+			"position" = (0, 0, 0)
+			"solid" = false
+			"red" = 0.968627
+			"shape" = "sphere"
+			"rotation" = <0, 0, 0, 1>
+			"blue" = 0.105882
+			"visible" = false
+			"shadow" = false
+			"movable" = false
+		}
+		"type" = "sphere"
+	}
+	6 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (6.46369, 0, -0.38917)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"scale" = (0.5, 0, 0)
+			"eulers" = (0, 90, 0)
+			"green" = 0.5
+			"shadow" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"density" = 1
+			"description" = ""
+			"blue" = 0.5
+			"solid" = false
+			"movephase" = 0
+			"movetime" = 1
+			"moveaccel" = 0.5
+		}
+		"type" = "sphere"
+	}
+	8 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"position" = (-6.4271, -0.0033741, -0.764495)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"scale" = (0.5, 0, 0)
+			"eulers" = (0, 90, 0)
+			"green" = 0.5
+			"shadow" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"density" = 1
+			"description" = ""
+			"blue" = 0.5
+			"solid" = false
+			"movephase" = 0
+			"movetime" = 1
+			"moveaccel" = 0.5
+		}
+		"type" = "sphere"
+	}
+	12 = 
+	{
+		"agent" = "TableSumo"
+		"params" = 
+		{
+			"description" = ""
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"radius" = 21.25
+			"curvature" = 10000
+			"height" = 25
+		}
+		"type" = ""
+	}
+	14 = 
+	{
+		"agent" = "Target"
+		"params" = 
+		{
+			"group" = "0"
+			"position" = (0.0416844, 4.83604, 0.081929)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"eulers" = (-90, 0, 0)
+			"green" = 0.5
+			"shadow" = false
+			"red" = 0.5
+			"shape" = "cylinder"
+			"solid" = false
+			"scale" = (42.7615, 1, 9.59795)
+			"blue" = 0.5
+			"movable" = false
+			"movephase" = 0
+			"description" = ""
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+}
+"version" = 1

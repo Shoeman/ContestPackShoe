@@ -1,0 +1,1719 @@
+"behaviours" =
+{
+	1 =
+	{
+		"description" = ""
+		"id" = 1
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 7
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "Follow"
+		"params" =
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" =
+			{
+				1 = 34
+				2 = 36
+				3 = 38
+				4 = 40
+				5 = 42
+				6 = 10
+			}
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	2 =
+	{
+		"description" = ""
+		"id" = 2
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 8
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "Follow"
+		"params" =
+		{
+			"startRandom" = false
+			"loop" = 0
+			"targets" =
+			{
+				1 = 35
+				2 = 37
+				3 = 39
+				4 = 41
+				5 = 43
+				6 = 9
+			}
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	3 =
+	{
+		"description" = ""
+		"id" = 3
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 13
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "ListenContact"
+		"params" =
+		{
+			"target" = 7
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	4 =
+	{
+		"description" = ""
+		"id" = 4
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = -3
+				"behaviour" = -2
+			}
+		}
+		"owner" = 13
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "ListenContact"
+		"params" =
+		{
+			"target" = 8
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+	5 =
+	{
+		"description" = ""
+		"id" = 5
+		"triggerOnEvents" =
+		{
+			2 =
+			{
+				"id" = "Contact"
+				"behaviour" = 3
+			}
+			3 =
+			{
+				"id" = "Contact"
+				"behaviour" = 4
+			}
+		}
+		"owner" = 13
+		"destroyOnEvents" =
+		{
+		}
+		"name" = "Finish"
+		"params" =
+		{
+			"invert" = false
+		}
+		"triggerOffEvents" =
+		{
+		}
+	}
+}
+"agents" =
+{
+	1 =
+	{
+		"agent" = "PoloTable"
+		"params" =
+		{
+			"description" = ""
+			"group" = "0"
+			"position" = (0, 0, 0)
+			"y" = 25
+			"x" = 157
+			"hole_x" = 0
+			"z" = 63
+			"hole_z" = 0
+			"visible" = false
+			"red" = 0.8
+			"green" = 0.2
+			"blue" = 0.2
+		}
+		"type" = ""
+	}
+	2 =
+	{
+		"agent" = "FixedSplitCube"
+		"params" =
+		{
+			"scale" = (10, 1, 10)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 0.1
+			"position" = (-70, -0.4, -15)
+			"shadow" = false
+			"red" = 0.96
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = false
+			"blue" = 0.1
+		}
+		"type" = ""
+	}
+	3 =
+	{
+		"agent" = "FixedSplitCube"
+		"params" =
+		{
+			"scale" = (10, 1, 10)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"position" = (-70, -0.4, 15)
+			"shadow" = false
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"solid" = false
+			"visible" = 1
+
+			"red" = 0
+			"green" = 0.75
+			"blue" = 0.2
+		}
+		"type" = ""
+	}
+	4 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-70, 0, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"blue" = 0.996094
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 180, 0)
+			"green" = 0.917969
+			"shadow" = false
+			"red" = 0.984375
+			"shape" = "cube"
+			"movetime" = 1
+			"moveaccel" = 0.5
+			"movable" = false
+			"description" = ""
+			"movephase" = 0
+			"solid" = false
+			"scale" = (9, 0.125, 9)
+		}
+		"type" = "cube"
+	}
+	5 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-70, 0, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 180, 0)
+			"green" = 0.945313
+			"shadow" = false
+			"red" = 0.996094
+			"shape" = "cube"
+			"scale" = (9, 0.125, 9)
+			"solid" = false
+			"blue" = 0.984375
+			"description" = ""
+			"movephase" = 0
+			"movetime" = 1
+			"moveaccel" = 0.5
+		}
+		"type" = "cube"
+	}
+	6 =
+	{
+		"agent" = "FixedSplitCube"
+		"params" =
+		{
+			"scale" = (2, 1, 55)
+			"group" = "0"
+			"eulers" = (0, 180, 0)
+			"green" = 0.6
+			"position" = (70, -0.4, 0)
+			"shadow" = false
+			"red" = 0.8
+			"rotation" = <0, 0, 0, 1>
+			"description" = ""
+			"visible" = 1
+			"solid" = false
+			"blue" = 0.2
+		}
+		"type" = ""
+	}
+	7 =
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" =
+		{
+			"scale" = (1, 1, 1)
+			"group" = "2"
+			"eulers" = (0, 270, 0)
+			"position" = (-66.2, 0.125011, -15)
+			"description" = "Red"
+			"hatpin" = (0, 0, 0)
+			"flags" = "5"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	8 =
+	{
+		"agent" = "ZookPlaceHolder"
+		"params" =
+		{
+			"scale" = (1, 1, 1)
+			"group" = "1"
+			"eulers" = (0, 270, 0)
+			"position" = (-66.2, 0.125011, 15)
+			"description" = "Green"
+			"hatpin" = (0, 0, 0)
+			"flags" = "1"
+			"movable" = 1
+		}
+		"type" = ""
+	}
+	9 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"movetime" = 1
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"green" = 0.5
+			"shadow" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"description" = ""
+			"scale" = (0.5, 0, 0)
+			"movable" = false
+			"solid" = false
+			"movephase" = 0
+			"blue" = 0.5
+			"position" = (74.591, 0, 15)
+		}
+		"type" = "sphere"
+	}
+	10 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (74.3343, 0, -15)
+			"visible" = false
+			"rotation" = <0, 0.707107, 0, 0.707107>
+			"moveposition" = (0, 0, 0)
+			"movable" = false
+			"density" = 1
+			"texture" = "Agents/World/Target/plaster"
+			"eulers" = (0, 270, 0)
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"shape" = "sphere"
+			"movetime" = 1
+			"blue" = 0.5
+			"moveaccel" = 0.5
+			"shadow" = false
+			"movephase" = 0
+			"description" = ""
+			"scale" = (0.5, 0, 0)
+		}
+		"type" = "sphere"
+	}
+	13 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (74.1944, 0, 0)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.5
+			"solid" = false
+			"red" = 0.5
+			"description" = "magic finish line"
+			"shape" = "cube"
+			"scale" = (10.4253, 0.18041, 61.2399)
+			"movable" = false
+			"blue" = 0.5
+			"eulers" = (0, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	14 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-50, 4, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.2
+			"solid" = 1
+			"red" = 0.9
+			"description" = "pole"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 8)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	15 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-50, 10, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.2
+			"solid" = 1
+			"red" = 0.9
+			"description" = "big cube"
+			"shape" = "cube"
+			"scale" = (4, 4, 4)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	16 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-50, 4, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.82
+			"solid" = 1
+			"red" = 0.4
+			"description" = "pole"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 8)
+			"movable" = 1
+			"blue" = 0.6
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	17 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-50, 10, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.82
+			"solid" = 1
+			"red" = 0.4
+			"description" = "big cube"
+			"shape" = "cube"
+			"scale" = (4, 4, 4)
+			"movable" = 1
+			"blue" = 0.6
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	18 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-25, 5.5, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.82
+			"solid" = 1
+			"red" = 0.4
+			"description" = "pole"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 11)
+			"movable" = 1
+			"blue" = 0.6
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	19 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-25, 13.75, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.82
+			"solid" = 1
+			"red" = 0.4
+			"description" = "big cube"
+			"shape" = "cube"
+			"scale" = (5.5, 5.5, 5.5)
+			"movable" = 1
+			"blue" = 0.6
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	20 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-25, 5.5, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.2
+			"solid" = 1
+			"red" = 0.9
+			"description" = "pole2"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 11)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	21 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-25, 13.75, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.2
+			"solid" = 1
+			"red" = 0.9
+			"description" = "big cube2"
+			"shape" = "cube"
+			"scale" = (5.5, 5.5, 5.5)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	22 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 7, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.2
+			"solid" = 1
+			"red" = 0.9
+			"description" = "pole3"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 14)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	23 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 17.5, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.2
+			"solid" = 1
+			"red" = 0.9
+			"description" = "big cube3"
+			"shape" = "cube"
+			"scale" = (7, 7, 7)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cube"
+	}
+	24 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 7, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "pole3"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 14)
+			"movable" = 1
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.4
+			"green" = 0.82
+			"blue" = 0.6
+		}
+		"type" = "cylinder"
+	}
+	25 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 17.5, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "big cube3"
+			"shape" = "cube"
+			"scale" = (7, 7, 7)
+			"movable" = 1
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.4
+			"green" = 0.82
+			"blue" = 0.6
+		}
+		"type" = "cube"
+	}
+	26 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (25, 8.5, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "pole4"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 17)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.9
+			"green" = 0.2
+			"blue" = 0.2
+		}
+		"type" = "cylinder"
+	}
+	27 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (25, 21.25, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "big cube4"
+			"shape" = "cube"
+			"scale" = (8.5, 8.5, 8.5)
+			"movable" = 1
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.9
+			"green" = 0.2
+			"blue" = 0.2
+		}
+		"type" = "cube"
+	}
+	28 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (25, 8.5, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "pole4"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 17)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.4
+			"green" = 0.82
+			"blue" = 0.6
+		}
+		"type" = "cylinder"
+	}
+	29 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (25, 21.25, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "big cube4"
+			"shape" = "cube"
+			"scale" = (8.5, 8.5, 8.5)
+			"movable" = 1
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.4
+			"green" = 0.82
+			"blue" = 0.6
+		}
+		"type" = "cube"
+	}
+	30 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (50, 10, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "pole5"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 20)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.4
+			"green" = 0.82
+			"blue" = 0.6
+		}
+		"type" = "cylinder"
+	}
+	31 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (50, 25, 15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "big cube5"
+			"shape" = "cube"
+			"scale" = (10, 10, 10)
+			"movable" = 1
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.4
+			"green" = 0.82
+			"blue" = 0.6
+		}
+		"type" = "cube"
+	}
+	32 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (50, 10, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "pole5"
+			"shape" = "cylinder"
+			"scale" = (1.5, 1.5, 20)
+			"movable" = 1
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.9
+			"green" = 0.2
+			"blue" = 0.2
+		}
+		"type" = "cylinder"
+	}
+	33 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (50, 25, -15)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.05
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = 1
+			"description" = "big cube5"
+			"shape" = "cube"
+			"scale" = (10, 10, 10)
+			"movable" = 1
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.9
+			"green" = 0.2
+			"blue" = 0.2
+		}
+		"type" = "cube"
+	}
+	34 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-50, 10, -15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.2
+			"solid" = false
+			"red" = 0.9
+			"description" = "red 1"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	35 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-50, 10, 15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.9
+			"solid" = false
+			"red" = 0
+			"description" = "green 1"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	36 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-25, 10, 15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0
+			"solid" = false
+			"red" = 0.9
+			"description" = "red 2"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	37 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-25, 10, -15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.9
+			"solid" = false
+			"red" = 0
+			"description" = "green 2"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	38 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 10, -15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0
+			"solid" = false
+			"red" = 0.9
+			"description" = "red 3"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	39 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (0, 10, 15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.9
+			"solid" = false
+			"red" = 0
+			"description" = "green 3"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	40 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (25, 10, 15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0
+			"solid" = false
+			"red" = 0.9
+			"description" = "red 4"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	41 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (25, 10, -15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0.9
+			"solid" = false
+			"red" = 0
+			"description" = "green 4"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	42 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (50, 10, -15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"green" = 0
+			"solid" = false
+			"red" = 0.9
+			"description" = "red 5"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"blue" = 0.2
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+		}
+		"type" = "cylinder"
+	}
+	43 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (50, 10, 15)
+			"visible" = false
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 0.25
+			"texture" = "plaster"
+			"transparent" = false
+			"solid" = false
+			"description" = "green 5"
+			"shape" = "cylinder"
+			"scale" = (0.1, 0.1, 20)
+			"movable" = false
+			"eulers" = (90, 0, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0
+			"green" = 0.9
+			"blue" = 0.2
+
+		}
+		"type" = "cylinder"
+	}
+
+	44 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-37.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, 39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	45 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-29.177528, -0.4, 9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (275, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+	46 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-12.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, 39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	47 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-4.177528, -0.4, 9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (275, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+
+	48 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (12.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, 39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	49 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (20.822472, -0.4, 9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (275, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+
+	50 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (37.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, 39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	51 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (45.822472, -0.4, 9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (275, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+
+	52 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-37.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, -39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	53 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-29.177528, -0.4, -9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (174.9, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+
+	54 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-12.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, -39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	55 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (-4.177528, -0.4, -9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (174.9, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+
+	56 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (12.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, -39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	57 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (20.822472, -0.4, -9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (174.9, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+
+	58 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (37.5, 0, 0)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"moveaccel" = 0.5
+			"density" = 1
+			"texture" = ""
+			"transparent" = false
+			"solid" = false
+			"description" = "arrow shaft 1"
+			"shape" = "cube"
+			"scale" = (3, 0.1, 30)
+			"movable" = false
+			"eulers" = (0, -39.806, 0)
+			"movephase" = 0
+			"shadow" = false
+			"movetime" = 1
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "cube"
+	}
+	59 =
+	{
+		"agent" = "Target"
+		"params" =
+		{
+			"group" = "0"
+			"position" = (45.822472, -0.4, -9.986814)
+			"visible" = 1
+			"moveposition" = (0, 0, 0)
+			"density" = 1
+			"eulers" = (174.9, 0, -90)
+			"solid" = false
+			"shape" = "wedge"
+			"moveaccel" = 0.5
+			"movetime" = 1
+			"movable" = false
+			"description" = "arrow head"
+			"movephase" = 0
+			"shadow" = 1
+			"scale" = (1, 6, 6)
+
+			"red" = 0.8
+			"green" = 0.8
+			"blue" = 0.8
+		}
+		"type" = "wedge"
+	}
+}
+"version" = 1

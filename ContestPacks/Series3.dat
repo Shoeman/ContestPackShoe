@@ -1,0 +1,122 @@
+"Series 3 - Beat the Boulder Green" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S3/S3_BEAT_THE_BOULDER_GREEN"
+			"contestants" = {
+			1 = 1
+			2 = 2
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "S3/S3_BEAT_THE_BOULDER_GREEN.PNG"
+	"score" = "red"
+}
+"Series 3 - Beat the Boulder Red" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S3/S3_BEAT_THE_BOULDER_RED"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "S3/S3_BEAT_THE_BOULDER_RED.PNG"
+	"score" = "green"
+}
+"Series 3 - Extreme Zook Super Hurdles" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S3/S3_EXTREME_ZOOK_HURDLES"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "S3/S3_EXTREME_ZOOK_HURDLES.png"
+}
+"Series 3 - Zook 'em Down" = {
+	"agents" = {
+		1 = {
+		"team" = "Blue"
+		"name" = "Blue team player"
+		"selectable" = 1
+		}
+		2 = {
+		"team" = "Red"
+		"name" = "Red team player"
+		"selectable" = 1
+		}
+	}
+
+	"rounds" = {
+		1 = {
+			"name" = "Round 1"
+			"contest" = "S3/S3_ZOOK_EM_DOWN"
+			"contestants" = {
+			1 = 2
+			2 = 1
+			}
+		}
+	}
+	"camera" = {
+		"start" = (-60, 0, 0)
+		"finish" = (60, 0, 0)
+	}
+	"picture" = "S3/S3_ZOOK_EM_DOWN.PNG"
+}
